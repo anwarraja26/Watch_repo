@@ -6,7 +6,9 @@ import Footer from "./footer.jsx";
 function App(){
     return(
         <div>
-           
+            <Header />
+            <Body />
+            <Footer />
         </div>
     );
 }

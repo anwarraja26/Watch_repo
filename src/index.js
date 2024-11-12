@@ -5,7 +5,6 @@ import App from './component/app.jsx';
 ReactDOM.render(
   <div>
     <App />
-
   </div>,
   document.getElementById("root")
 )

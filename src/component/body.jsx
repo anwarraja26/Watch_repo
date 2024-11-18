@@ -22,13 +22,12 @@ function Body() {
     e.preventDefault();
 
     const inputValues = [
-      parseFloat(input.input1), // Original Price
-      parseFloat(input.input2), // Rating
-      parseFloat(input.input3), // Number of Ratings
-      parseFloat(input.input4), // Battery Life
+      parseFloat(input.input1), 
+      parseFloat(input.input2), 
+      parseFloat(input.input3), 
+      parseFloat(input.input4),
     ];
 
-    // Validation: Ensure input values are numbers
     if (inputValues.some((value) => isNaN(value))) {
       setMessage("Please enter valid numbers.");
       return;
@@ -45,7 +44,6 @@ function Body() {
 
       const data = await response.json();
 
-      // Check if the request was successful
       if (response.ok) {
         setMessage(`Predicted Discount: ${data.predicted_discount}%`);
         setEvaluationDetails(data.evaluationDetails);
@@ -60,8 +58,9 @@ function Body() {
 
   return (
     <div className="container">
+      
       <form className="container_form" onSubmit={handleSubmit}>
-        <h2 id="container_text">Do you want to check your watch price?</h2>
+        <h2 id="container_text"><center>Do you want to check your watch price?</center></h2>
         <input
           type="text"
           name="input1"

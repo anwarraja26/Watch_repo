@@ -1,14 +1,64 @@
 body{
-background-color: rgb(213, 208, 208);
+background-color:black;
 background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
+#a_header{
+  color:silver;
+  font-size:20px;
+
+}
+#font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.link{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: 800px;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: transparent;  
+}
+.link li {
+  display: inline-block;
+  padding: 10px 20px; /* Add padding for better spacing */
+  border: 2px solid transparent; /* Border for hover effects */
+  border-radius: 8px; /* Rounded corners for modern design */
+  font-size: 16px; /* Adjust font size */
+  background-color: black; /* Light background for the items */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.link li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Darker color for text */
+}
+
+.link li:hover {
+  background-color: rgb(58, 58, 69); /* Highlight color on hover */
+  color: white; /* Change text color on hover */
+  border: 2px solid #ff9800; /* Add border color on hover */
+}
+
+.link li:hover a {
+  color: white; /* Ensure the link text is white on hover */
+}
+
 #head{
-  color:white;
+  color:silver;
   text-align: center;
 }
 .container_form h2{
   color:white; 
+
 }
+
 #container_text{
   color:white;
 }
@@ -16,11 +66,14 @@ form {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
-
+  background-image: url("/watch_pic.png"); /* Relative to the public folder */
+  background-size: cover; /* Makes the image cover the form */
+  background-repeat: no-repeat; /* Prevent tiling */
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+
 .form_input{
   display: flex;
   justify-content: center;
@@ -39,14 +92,23 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left:40px;
-  margin-left: 120px;
+  padding-left:60px;
+  margin-left: 80px;
   border-radius: 7px;
   height:max-content;
   color:white;
   background-color: rgb(162, 153, 153);
+  width: 480px;
+  margin: 30px auto 20px auto;
+  text-align:center;
+
 }
 #predict{
   text-align: center;
   color:black;
+}
+.container_form {
+  background-image: url("/watch_pic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -17,7 +17,7 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   display: flex;
   flex-direction: row;
   position: relative;
-  padding-left: 800px;
+  padding-left: 850px;
   justify-content: center;
   gap: 25px;
   list-style-type: none;
@@ -53,6 +53,9 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 #head{
   color:silver;
   text-align: center;
+  padding-top: -40px;
+  font-family: Serif;
+  font-size:45px;
 }
 .container_form h2{
   color:white; 
@@ -73,6 +76,38 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height based on your needs */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_text{
+  color:white
+}
+.background-video {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure video is behind content */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
 
 .form_input{
   display: flex;

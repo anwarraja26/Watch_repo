@@ -7,7 +7,7 @@ function Header(){
             <li><a href="" id="a_header">About</a></li>
             <li><a href="" id="a_header">Predict</a></li>
             </ul>
-            <h1 id="head" >Watch Price Predictor</h1>
+            <b><h1 id="head" >WATCH PRICE PREDICTOR</h1></b>
             
         </header>
         

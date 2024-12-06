@@ -5,7 +5,6 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 #a_header{
   color:silver;
   font-size:20px;
-
 }
 #font {
   font-family: "Oswald", sans-serif;
@@ -61,6 +60,39 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   color:white; 
 
 }
+.about_div {
+  display: flex; /* Flexbox layout */
+
+  justify-content: space-around; /* Space evenly between items */
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+#heading_span{
+  font-size:20px;
+  color:white;
+  text-align:justify;
+}
+
+.about {
+  display: inline-block;
+  color: rgb(125, 137, 126);
+  width: 320px; /* Reduced width for better alignment */
+  font-family:monospace;
+  font-size:15px;
+
+  margin: 20px; /* Add space around each box */
+  background-size: cover; /* Makes the image cover the background */
+  padding: 15px 20px; /* Padding for inner spacing */
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  min-height: 500px;
+}
+
+
+.about_div h2{
+  color:white;
+  text-align:center;
+}
 
 #container_text{
   color:white;
@@ -84,6 +116,10 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#about{
+  color:white;
 }
 
 .inner_text{
@@ -98,6 +134,7 @@ form {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+ 
   z-index: -1; /* Ensure video is behind content */
 }
 
@@ -127,15 +164,22 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left:60px;
-  margin-left: 80px;
+  padding-left:45px;
+  margin-left: 70px;
+  font-size:20px;
   border-radius: 7px;
   height:max-content;
   color:white;
-  background-color: rgb(162, 153, 153);
-  width: 480px;
+  background-color: rgb(43, 40, 40);
+  width: 500px;
   margin: 30px auto 20px auto;
-  text-align:center;
+  text-align:justify;
+  
+
+}
+#evaluate_head{
+  font: size 3px;
+  color:red;
 
 }
 #predict{
@@ -146,4 +190,9 @@ form {
   background-image: url("/watch_pic.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 600px) {
+  .video-container {
+      width: 95%;
+  }
 }
